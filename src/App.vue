@@ -7,6 +7,14 @@
     <router-view/>
   </div>
 </template>
+<script>
+import ApiService from '@/api/services.js';
+export default {
+  mounted : function(){
+    ApiService.getTopArtists('spain');
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
